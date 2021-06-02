@@ -7,7 +7,17 @@ If you want to build a NLP model, word embeddings are the building blocks for mo
 1. Train word embedding along with your final NLP model from the scratch. It is generally used in small and simple models. In this case, as model stacks huge no of layers, vanishing gradients become significant and cause poor training of word embedding.  Example- Tensorflow's Embedding API   
 2. Use pre-trained embedding, trained on different dataset. Most of the industrial and real word soltions use this option. It has minor drawback. i.e when our dataset contains words which aren't present in pre-trained embeddings, embedding quality degrades.  Example FastText,GloVe,Word2vec.  
 
-This work addresses this issue by allowing us to train word embedding on specific data and then use this trained embedding as tensorflow layer API and train along with model. 
+This work addresses this issue by allowing us to train word embedding on specific data and then use this trained embedding as tensorflow layer API and train along with model.   
+
+
+![image](https://user-images.githubusercontent.com/39105103/120501932-a2b7a600-c3df-11eb-8613-2b403764f478.png)
+source: https://projector.tensorflow.org/  
+
+
+## How to use it   
+
+
+
 
 
 
