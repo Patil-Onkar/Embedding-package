@@ -11,9 +11,9 @@ setuptools.setup(
     description="Train and use word embeddings specific to your data",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/Patil-Onkar/Embedding-package",
     project_urls={
-        "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
+        "Bug Tracker": "https://github.com/Patil-Onkar/Embedding-package/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -26,7 +26,7 @@ setuptools.setup(
         "numpy",
 	"pandas",
     ],     
-    package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    package_dir={"": "Source"},
+    packages=setuptools.find_packages(where="Source"),
     python_requires=">=3.6",
 )
