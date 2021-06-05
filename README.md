@@ -1,4 +1,4 @@
-# Embedding-package
+# WordEmbed
 
 ## About 
 This project allows you to train word embedding on your own data set. It incorporates embedding methods such as 'Glove','Skip-gram' or 'CBOW' and train word embeddings specific to dataset. Morever, this word embeddings can be used as tensorflow layer API too.  
