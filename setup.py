@@ -11,9 +11,9 @@ setuptools.setup(
     description="Train and use word embeddings specific to your data",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Patil-Onkar/Embedding-package",
+    url="https://github.com/Patil-Onkar/WordEmbed",
     project_urls={
-        "Bug Tracker": "https://github.com/Patil-Onkar/Embedding-package/issues",
+        "Bug Tracker": "https://github.com/Patil-Onkar/WordEmbed/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -26,7 +26,7 @@ setuptools.setup(
         "numpy",
 	"pandas",
     ],     
-    package_dir={"": "Source"},
-    packages=setuptools.find_packages(where="Source"),
+    package_dir={"": "WordEmbed"},
+    packages=setuptools.find_packages(where="WordEmbed"),
     python_requires=">=3.6",
 )
