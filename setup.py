@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="Embed",
+    name="WordEmbed",
     version="0.0.1",
     author="Onkar Patil",
     author_email="onkar.patil02@gmail.com",
