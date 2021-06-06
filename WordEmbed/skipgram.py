@@ -3,7 +3,7 @@ import random
 from tqdm import tqdm
 
 
-from Embed.correlation import spearman_cor
+from WordEmbed.correlation import spearman_cor
 
 
 class Model(tf.keras.Model):

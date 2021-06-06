@@ -1,6 +1,6 @@
-from Embed.skipgram import Skipgram
-from Embed.cbow import CBOW
-from Embed.glove import Glove
+from WordEmbed.skipgram import Skipgram
+from WordEmbed.cbow import CBOW
+from WordEmbed.glove import Glove
 
 
 def Embed(

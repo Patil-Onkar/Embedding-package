@@ -6,7 +6,7 @@ from time import time
 from tqdm import tqdm
 
 
-from Embed.correlation import spearman_cor
+from WordEmbed.correlation import spearman_cor
 
 
 # Building model

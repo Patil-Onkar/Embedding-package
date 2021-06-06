@@ -4,7 +4,7 @@ import random
 from tqdm import tqdm
 import tensorflow.keras.backend as K
 
-from Embed.correlation import spearman_cor
+from WordEmbed.correlation import spearman_cor
 
 
 # create the model
