@@ -25,7 +25,6 @@ setuptools.setup(
         "tqdm",
         "numpy",
 	"pandas",
-        "io",
         "requests",
         "zipfile",
     ],     
