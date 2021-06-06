@@ -1,6 +1,6 @@
 import tensorflow as tf
 import random
-from tqdm import tqdm
+from tqdm.notebook import tqdm
 
 
 from WordEmbed.correlation import spearman_cor

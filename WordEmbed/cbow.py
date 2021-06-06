@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 import random
-from tqdm import tqdm
+from tqdm.notebook import tqdm
 import tensorflow.keras.backend as K
 
 from WordEmbed.correlation import spearman_cor
