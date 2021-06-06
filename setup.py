@@ -26,7 +26,6 @@ setuptools.setup(
         "numpy",
 	"pandas",
     ],     
-    package_dir={"": "WordEmbed"},
-    packages=setuptools.find_packages(where="WordEmbed"),
+    packages=setuptools.find_packages(),
     python_requires=">=3.6",
 )
