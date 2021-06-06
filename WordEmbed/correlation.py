@@ -1,9 +1,15 @@
 import pandas as pd
 import numpy as np
+import requests, zipfile, io
 
 def spearman_cor(embed):
+    # Download Simlex file and save it locally
+    r = requests.get('https://fh295.github.io/SimLex-999.zip', stream=True)
+    z = zipfile.ZipFile(io.BytesIO(r.content))
+    z.extractall()
+
     # Load simlex words
-    df = pd.read_excel('data/SimLex-999.xlsx')
+    df = pd.read_csv('SimLex-999/SimLex-999.txt',sep='\t')
     word1 = list(df['word1'])
     word2 = list(df['word2'])
     simlex_words = set(word1 + word2)

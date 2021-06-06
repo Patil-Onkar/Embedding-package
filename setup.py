@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="WordEmbed",
-    version="0.1.0",
+    version="0.1.1",
     author="Onkar Patil",
     author_email="onkar.patil02@gmail.com",
     description="Train and use word embeddings specific to your data",
@@ -25,6 +25,9 @@ setuptools.setup(
         "tqdm",
         "numpy",
 	"pandas",
+        "io",
+        "requests",
+        "zipfile",
     ],     
     packages=setuptools.find_packages(),
     python_requires=">=3.6",
