@@ -23,45 +23,59 @@ This work addresses this issue by allowing us to train word embedding on specifi
 ## Installation  
 
 LINUX:  
-py -m pip install Embed  
+python -m pip install WordEmbed  
 
 WINDOWS:  
-py -m pip install Embed  
+py -m pip install WordEmbed  
 
 ## Usage  
 
 class Embed(data,embidding_dim,embedding='glove',sampling_window=2, negative_samples=4,Trainable=True)  
 
 Parameters:  
-data= string, path to raw data file.  
-embedding_dim= integer, Vector dimension e.g 512  
-embeding=string,{'glove','skipgram','cbow'} embedding method to be used default to 'glove'  
-sampling_window= integer, {1<sampling_window<10} Size of sampling window default = 2  
-negative_samples= integer, {2<negative_samples<15} Size of negative samples default=4  
-Trainable= bool, if TRUE, Tensorflow layer API is trainable else Freezed if False. Default=True  
 
-Returns Embed object  
+**data**= string, path to raw data file.  
+
+**embedding_dim**= integer, Vector dimension e.g 512  
+
+**embeding**=string,{'glove','skipgram','cbow'} embedding method to be used default to 'glove'  
+
+**sampling_window**= integer, {1<sampling_window<10} Size of sampling window default = 2  
+
+**negative_samples**= integer, {2<negative_samples<15} Size of negative samples default=4  
+
+**Trainable**= bool, if TRUE, Tensorflow layer API is trainable else Freezed if False. Default=True  
+
+**Returns Embed object**  
 
 ### Methods  
 
-1. train():  
+1. **train()**:  
     Preprocess the raw data and trains the embedding  
 
 ### Attributes  
 
-1. score:  
+1. **score:**  
    Returns a float value, spearmen correlation w.r.t simlex999. It can be used to compare embeddings from different method.  
    
-2. TfAPI:  
+2. **TfAPI:**  
    Returns tensorflow's layer object. It can be used in tensorflow model building, just like teensorflow's Embedding layer API.  
    
-3. embeddings:  
+3. **embeddings:**  
    Returns a dictonary with word-embedding pair.  
    
-4. tokenizer:  
+4. **tokenizer:**  
    Returns tensorflow's tokenizer object.  
    
-### Example
+### Example  
+
+![image](https://user-images.githubusercontent.com/39105103/120958342-29b8a580-c775-11eb-9ebd-16dbd477b98e.png)
+  
+  
+
+  
+  
+
 
 
 
